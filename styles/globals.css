@@ -2,32 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* SIde Bar */
+#sideBar {
+    width: 72px;
+    height: 100vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Side Bar Icons */
+.icon-wrapper:hover > .icon {
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Feed */
+#feed{
+    max-width: 630px;
+    width: 100%;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Status List */
+.profile-pic-wrapper-outer{
+    padding: 2px;
+    box-sizing: content-box !important;
+    background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+}
+
+.profile-pic-wrapper-outer .profile-pic-wrapper-inner{
+    height: 100%;
+    width: 100%;
+    border-width: 3.5px;
+    border-style: solid;
+    border-radius: inherit;
+    overflow: hidden;
+}
+
+.profile-pic-wrapper-inner .status-avatar{
+    border-radius: inherit;
 }
