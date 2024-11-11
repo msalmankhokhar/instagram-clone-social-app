@@ -32,7 +32,7 @@ export default function Home() {
                 <Threedots />
               </div>
               <div className="">
-                <img src="/post_ali.jpg" alt="" />
+                <img src="/post_iqra.jpg" alt="" />
               </div>
             </div>
           </div>
